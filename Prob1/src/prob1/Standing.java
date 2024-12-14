@@ -1,5 +1,5 @@
-package prob1;
+package Prob1;
 
 public enum Standing {
-    FRESHMAN, SOPHOMORE, JUNIOR, SENIOR;
+	FRESHMAN, SOPHOMORE, JUNIOR, SENIOR;
 }

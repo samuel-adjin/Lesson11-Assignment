@@ -1,17 +1,13 @@
-package prob1;
-
+package Prob1;
 import java.util.*;
-
 public class Admin {
-
-    public static HashMap<Key, Student> processStudents(List<Student> students) {
-        //implement
-        HashMap<Key, Student> studentsHashMap = new HashMap<>();
-        for (Student student : students) {
-            Key key = new Key(student.getFirstName(), student.getLastName());
-            studentsHashMap.put(key, student);
-        }
-
-        return studentsHashMap;
-    }
+	public static HashMap<Key, Student> processStudents(List<Student> students) {
+		HashMap<Key, Student> studentMap = new HashMap<>();
+		//implement
+		for(Student student : students){
+			Key key = new Key(student.getFirstName(), student.getLastName());
+			studentMap.put(key,student);
+		}
+		return studentMap;
+	}
 }
